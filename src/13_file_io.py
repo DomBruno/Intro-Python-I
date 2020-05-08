@@ -10,8 +10,10 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # Note: pay close attention to your current directory when trying to open "foo.txt"
 
 # YOUR CODE HERE
-with open('/foo.txt', 'r') as f
-    f.readlines()
+f = open('foo.txt', 'r')
+
+print(f.readlines())
+f.close()
 
 # Open up a file called "bar.txt" (which doesn't exist yet) for
 # writing. Write three lines of arbitrary content to that file,
@@ -19,3 +21,8 @@ with open('/foo.txt', 'r') as f
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
+e = open('bar.txt', 'w')
+e.write('Shiver me timbers!\n it is a pytohn!\n why is it always snakes?')
+e.close()
+e = open('bar.txt', 'r')
+print(e.readlines())
