@@ -36,7 +36,7 @@ month = now.month
 returned_cal = []
 if len(sys.argv) > 3:
     print("Please enter month and date arguments only")
-    exit()
+    sys.exit()
 if len(sys.argv) == 3:
     month = int(sys.argv[1])
     year = int(sys.argv[2])
